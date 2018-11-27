@@ -10,6 +10,8 @@ Todos son del mismo grado de complejidad. Los proyectos están inspirados y basa
 
 Dado que el proyecto puede ser realizado en equipos, se evaluará las contribuciones individuales al código. Para esto será útil el uso de ramas (branch) del repositorio, y que puedan actualizar la rama maestra (la que contiene el código funcional) a traves del botón "pull request" que les aparecerá cuando hayan creado una rama. 
 
+Parte de la evaluación de los proyectos finales es continua, es decir revisando el avance durante  las siguientes 3 clases. 
+
 
 
 
