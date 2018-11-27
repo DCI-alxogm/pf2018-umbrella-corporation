@@ -1,4 +1,8 @@
-Este es el repositorio para los proyectos finales del curso de progrmación básica 2018. Los proyectos pueden ser individuales o por equipo respeando el máximo definido para cada proyecto.
+Este es el repositorio para los proyectos finales del curso de progrmación básica 2018. 
+
+El código principal del proyecto se realiza en C. Los gráficos o anaysis de resultados pueden ser usando python. 
+
+Los proyectos pueden ser individuales o por equipo respeando el máximo definido para cada proyecto.
 
 Hay tres documentos pdf que contienen la descripción de 5 proyectos
 
