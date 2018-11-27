@@ -10,7 +10,7 @@ Todos son del mismo grado de complejidad. Los proyectos están inspirados y basa
 
 Dado que el proyecto puede ser realizado en equipos, se evaluará las contribuciones individuales al código. Para esto será útil el uso de ramas (branch) del repositorio, y que puedan actualizar la rama maestra (la que contiene el código funcional) a traves del botón "pull request" que les aparecerá cuando hayan creado una rama. 
 
-Parte de la evaluación de los proyectos finales es continua, es decir revisando el avance durante  las siguientes 3 clases. 
+Parte de la evaluación de los proyectos finales es continua, es decir revisando el avance durante  las siguientes 3 clases. La última revisión será el día 5 de Dic. de 2018 (Fecha exámen fina), sin embargo la fecha última de actualización del repositorio que se tomará en cuenta es el día 9 de Dic. de 2018 a las 23:00 hrs. 
 
 
 
