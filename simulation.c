@@ -39,10 +39,24 @@ for(i=0;i<n;i++)
 int j;
 int k;
 
-for(i=0;i<n;i++)
+for(i=0;i<10;i++)
 	{
-	position[i][j][k]=40;
-	printf("%lf %lf %lf\n",position[i][j][k]);/*first column of the arrangement is set to be the radius, second element angle and third the azimuth angle*/
+	if(i==0)
+		{
+		position[i][j][k]=6956518479687.803;
+		printf("%lf %lf %lf\n",position[i][j][k]);/*first column of the arrangement is set to be the radius, second element angle and third the azimuth angle*/
+		}
+	else if(i==1)
+		{
+		position[i][j][k]=((2*(6956518479687.803))/3);
+		printf("%lf %lf %lf\n",position[i][j][k]);
+		}
+	else{
+		position[i][j][k]=(6956518479687.803/(i++));
+		printf("%lf %lf %lf\n",position[i][j][k]);
+
+	}
+	
 	}
 	
 return 0;
