@@ -3,7 +3,7 @@
 #include <string.h>
 int main(int argc, char *argv[]) {
 	float T[255],h[255],m[255],x[255],y[255],z[255],vx[255],vy[255],vz[255],dx[255][255],fx[255][255],sumx[255],dy[255][255],fy[255][255],sumy[255],dz[255][255],fz[255][255],sumz[255],sumxx[255],sumyy[255],sumzz[255];	
-	#define G -1 //6.67e-11 en metros 2.67e-60 en parsecs 1.992e-44 en UA, usa la que se adapte a las coordenadas que vas a hacer en tu parte, la formula tiene un negativo asi que creo le debes poner - a la G aqui para que no haya problemas
+	#define G -1 //, usa la que se adapte a las coordenadas que vas a hacer en tu parte pero la meastra dijo que en mega parsecs asi que quedaria de 4300, la formula tiene un negativo asi que creo le debes poner - a la G aqui para que no haya problemas
 	int i,j,k,rep,fil=0,npi=0,u;
 	char nombre[20],it[255];
 	FILE *o;
