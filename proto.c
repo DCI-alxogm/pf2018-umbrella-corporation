@@ -4,14 +4,10 @@
 int main(int argc, char *argv[]) {
 	float T[255],h[255],m[255],x[255],y[255],z[255],vx[255],vy[255],vz[255],dx[255][255],fx[255][255],sumx[255],dy[255][255],fy[255][255],sumy[255],dz[255][255],fz[255][255],sumz[255],sumxx[255],sumyy[255],sumzz[255];	
 	#define G -1 //, usa la que se adapte a las coordenadas que vas a hacer en tu parte pero la meastra dijo que en mega parsecs asi que quedaria de 4300, la formula tiene un negativo asi que creo le debes poner - a la G aqui para que no haya problemas
-	int i,j,k,rep,fil=0,npi=0,u;
+	int i,j,k,rep,fil=0,npi=0;
 	char nombre[20],it[255];
 	FILE *o;
-	printf("El programa tiene dos opciones:\n\n1.-utiliza coordenadas ya establecidas en un archivo a dar.\n2.- genera las cordenadas de distintas masas posicionadas como esferas.\n\nInserta 1-2 segun cporresponda");		
-	scanf("%d",&u); //escanear variable segun lo que quiera el usuario
-	switch(u){
-	
-case 1:	printf("El programa lee un archivo con nombre que se define a continuacion, el archivo tendra que estar ordenado de la forma\n t total-aumento de t-masa-posicion x-y-z-velocidad x-y-z\ninserta el nombre del archivo a abrir: ");
+		printf("El programa lee un archivo con nombre que se define a continuacion, el archivo tendra que estar ordenado de la forma\n t total-aumento de t-masa-posicion x-y-z-velocidad x-y-z\ninserta el nombre del archivo a abrir: ");
 		scanf("%s",&nombre);//escanear variable segun el archivo que tenga el usuario, solo correrar adecuadamente si esta bien organizado y hay columnas exclusivas tambien pata tiempo total aumento de tiempo y masa
 		o=fopen(nombre,"r"); //abrir archivo que indique el usuario 
   			while (fscanf(o,"%f %f %f %f %f %f %f %f %f",&T[fil],&h[fil],&m[fil],&x[fil],&y[fil],&z[fil],&vx[fil],&vy[fil],&vz[fil])!= EOF){ //escanear variables hasta que no detecte mas filas
@@ -69,20 +65,11 @@ case 1:	printf("El programa lee un archivo con nombre que se define a continuaci
 			sprintf(it,"%i",npi ); //convertir contador en string en cada repeticion para su uso en el nombre de cada archivo de iteracion
 			strcat(it,".txt");//concatenar string para nombramiento final del archivo de la iteracion correspondiente
 			o=fopen(it,"w");
-				fprintf(o,"X\t Y\t Z\tVx \tVy \tVz\n");//imprimir encabezado de cada columna en el archivo
 				for(i=0;i<fil;i++){//for para imprimir en el archivo cada dato nuevo de posiciones y velocidades correspondientes a cada particula
 					fprintf(o,"%f %f %f %f %f %f \n",x[i],y[i],z[i],vx[i],vy[i],vz[i]);
 				}
 			fclose(o);
 		}
-		break;
 
-case 2:
-	printf("yoyo");
-	//pones lo de generar las coordenadas velocidades y das un aumento de tiempo y tiempo total determinado o lo pides al usuario y cambias poquito el codigo mio(solo le modificas h[] y T[]) dejandolas como constantes ;)//
-	break;
-
-default: printf("yoyox2");
-}
 return 0;	
 			}
